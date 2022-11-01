@@ -1,0 +1,21 @@
+name: napari-3d-affine
+display_name: napari_3d_affine
+contributions:
+  commands:
+    - id: napari-3d-affine.make_qwidget
+      python_name: napari_3d_affine._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: napari-3d-affine.make_magic_widget
+      python_name: napari_3d_affine._widget:example_magic_widget
+      title: Make example magic widget
+    - id: napari-3d-affine.make_func_widget
+      python_name: napari_3d_affine._widget:example_function_widget
+      title: Make example function widget
+  widgets:
+    - command: napari-3d-affine.make_qwidget
+      display_name: Example QWidget
+    - command: napari-3d-affine.make_magic_widget
+      display_name: Example Magic Widget
+    - command: napari-3d-affine.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget
